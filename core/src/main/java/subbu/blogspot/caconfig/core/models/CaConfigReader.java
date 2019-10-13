@@ -4,6 +4,7 @@
 package subbu.blogspot.caconfig.core.models;
 
 import java.util.Arrays;
+import java.util.Collection;
 
 import javax.annotation.PostConstruct;
 
@@ -18,6 +19,7 @@ import org.slf4j.LoggerFactory;
 import com.day.cq.wcm.api.Page;
 
 import subbu.blogspot.caconfig.core.slingcaconfig.SiteConfiguration;
+import subbu.blogspot.caconfig.core.slingcaconfig.footerlinks.FooterConfig;
 
 /**
  * @author vraoadavi
@@ -28,6 +30,8 @@ public class CaConfigReader {
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
 	private SiteConfiguration siteConfiguration = null;
+	
+	private FooterConfig footerConfig = null;
 	
 	 @ScriptVariable(name = "currentPage")
 	 private Page page;
@@ -44,6 +48,7 @@ public class CaConfigReader {
 	@PostConstruct
 	public void init() {
 		siteConfiguration =  page.adaptTo(ConfigurationBuilder.class).as(SiteConfiguration.class);
+		footerConfig = page.adaptTo(ConfigurationBuilder.class).as(FooterConfig.class);
 		releaseDateFormat = siteConfiguration.releaseDateFormat();
 		logoImage = siteConfiguration.logoImage();
 		logoImageLink = siteConfiguration.logoImageLink();
@@ -79,6 +84,12 @@ public class CaConfigReader {
 
 	public String[] getStringArrayParam() {
 		return stringArrayParam;
+	}
+	
+	
+
+	public FooterConfig getFooterConfig() {
+		return footerConfig;
 	}
 
 	@Override
