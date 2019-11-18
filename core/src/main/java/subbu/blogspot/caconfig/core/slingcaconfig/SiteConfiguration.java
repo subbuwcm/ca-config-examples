@@ -4,7 +4,7 @@ import org.apache.sling.caconfig.annotation.Configuration;
 import org.apache.sling.caconfig.annotation.Property;
 
 @Configuration(
-    label = "Website Configuration",
+    label = "Locale Page Configurations",
     description = "Configuration can be made per website")
 public @interface SiteConfiguration {
 
@@ -62,6 +62,6 @@ public @interface SiteConfiguration {
    
     @Property(label = "String Array Param")
     String[] stringArrayParam() default {
-        "value1", "value2"
+        "Subbu", "RK","Kiran","Laxman"
     };
 }

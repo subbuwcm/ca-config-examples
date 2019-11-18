@@ -19,7 +19,7 @@ import org.slf4j.LoggerFactory;
 import com.day.cq.wcm.api.Page;
 
 import subbu.blogspot.caconfig.core.slingcaconfig.SiteConfiguration;
-import subbu.blogspot.caconfig.core.slingcaconfig.footerlinks.FooterConfig;
+import subbu.blogspot.caconfig.core.slingcaconfig.nestedconfig.FooterConfig;
 
 /**
  * @author vraoadavi

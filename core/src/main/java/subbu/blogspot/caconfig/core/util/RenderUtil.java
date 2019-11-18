@@ -1,6 +1,3 @@
-/**
- * 
- */
 package subbu.blogspot.caconfig.core.util;
 
 import java.util.Optional;

@@ -38,7 +38,7 @@
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="cq/gui/components/coral/common/form/pagefield"
                                                 fieldDescription="Links the title. Path to a content page, external URL or page anchor."
-                                                fieldLabel="Config pef path"
+                                                fieldLabel="Config path"
                                                 name="./sling:configRef"
                                                 rootPath="/conf"/>
                                         </items>

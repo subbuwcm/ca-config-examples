@@ -46,7 +46,7 @@
 									Bundle-Category: CACONFIG
 									-exportcontents: ${packages;VERSIONED}
 									Sling-Model-Packages: subbu.blogspot.caconfig.core.models
-									Sling-ContextAware-Configuration-Classes: subbu.blogspot.caconfig.core.slingcaconfig.SiteConfiguration,subbu.blogspot.caconfig.core.slingcaconfig.footerlinks.FooterConfig
+									Sling-ContextAware-Configuration-Classes: subbu.blogspot.caconfig.core.slingcaconfig.SiteConfiguration,subbu.blogspot.caconfig.core.slingcaconfig.nestedconfig.FooterConfig,subbu.blogspot.caconfig.core.slingcaconfig.collections.CollectionExample
 									-snapshot: ${tstamp;yyyyMMddHHmmssSSS}
 									Bundle-DocURL:
                                 ]]></bnd>

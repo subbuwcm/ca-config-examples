@@ -13,7 +13,18 @@
 <h1>Footer Menu</h1>
 <ul data-sly-repeat.menu=${caConfigReader.footerConfig.menu}>
 	<li data-sly-repeat.link=${menu.links}>
-    		${link.linkText}
-            ${link.link}
+    		Menu link text : ${link.linkText}<br>
+            Menu link : ${link.link}
     </li>
 </ul>
+
+<h1> Collection Examples</h1>
+<ul>
+	<li data-sly-repeat.link=${caConfigReader.linksList}>
+    		Link Name : ${link.name}<br>
+            Page path : ${link.pagePath}
+    </li>
+</ul>
+
+<h1>Reading configurtions directly in HTL</h1>
+${caconfig['subbu.blogspot.caconfig.core.slingcaconfig.SiteConfiguration'].stringArrayParam}
