@@ -172,6 +172,10 @@
             <groupId>io.wcm</groupId>
             <artifactId>io.wcm.testing.aem-mock.junit5</artifactId>
         </dependency>
+         <dependency>
+                <groupId>org.apache.sling</groupId>
+                <artifactId>org.apache.sling.testing.sling-mock-oak</artifactId>
+            </dependency>
         <dependency>
             <groupId>uk.org.lidalia</groupId>
             <artifactId>slf4j-test</artifactId>
@@ -192,6 +196,18 @@
             <groupId>io.wcm</groupId>
             <artifactId>io.wcm.caconfig.editor.package</artifactId>
             <type>zip</type>
+        </dependency>
+        <dependency>
+        	<groupId>org.apache.sling</groupId>
+        	<artifactId>org.apache.sling.testing.caconfig-mock-plugin</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.sling</groupId>
+			<artifactId>org.apache.sling.testing.sling-mock.junit4</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.wcm</groupId>
+			<artifactId>io.wcm.testing.wcm-io-mock.caconfig</artifactId>
         </dependency>
         <!-- Sling Context-Aware Config -->
         <dependency>
