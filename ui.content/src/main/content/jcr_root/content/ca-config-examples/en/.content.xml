@@ -4,9 +4,12 @@
     <jcr:content
         cq:contextHubPath="/libs/settings/cloudsettings/legacy/contexthub"
         cq:contextHubSegmentsPath="/conf/ca-config-examples/settings/wcm/segments"
+        cq:lastModified="{Date}2020-06-08T15:30:56.728-07:00"
+        cq:lastModifiedBy="admin"
         cq:template="/conf/ca-config-examples/settings/wcm/templates/content-page"
         jcr:primaryType="cq:PageContent"
         jcr:title="English"
+        sling:configRef="/conf/ca-config-examples/en"
         sling:resourceType="ca-config-examples/components/structure/page"
         pageTitle="New Project"
         socialMedia="[facebook]">
@@ -137,4 +140,5 @@
             </responsivegrid>
         </root>
     </jcr:content>
+    <config-en/>
 </jcr:root>

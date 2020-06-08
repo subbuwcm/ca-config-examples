@@ -6,6 +6,7 @@
         cq:deviceGroups="[/etc/mobile/groups/responsive]"
         jcr:primaryType="cq:PageContent"
         jcr:title="ca-config-examples"
+        sling:configRef="/conf/ca-config-examples"
         sling:redirect="{Boolean}true"
         sling:redirectStatus="{Long}302"
         sling:resourceType="foundation/components/redirect"
@@ -16,4 +17,5 @@
     </jcr:content>
     <en/>
     <fr/>
+    <ca-config-global/>
 </jcr:root>
